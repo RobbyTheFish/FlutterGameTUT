@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'game_core/game.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   SystemChrome.setPreferredOrientations([
@@ -12,9 +13,7 @@ void main() {
     
     runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Center(
-        child: Text("Game"),
-      ),
+      home: Game(),
     ));
   }
   );
